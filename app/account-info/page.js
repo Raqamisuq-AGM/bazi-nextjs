@@ -1,3 +1,5 @@
+import AccountCreateData from "../components/AccountCreate/AccountCreateData";
+
 export default function AccountInfoPage() {
-  return <div>this is account info page</div>;
+  return <AccountCreateData />;
 }
