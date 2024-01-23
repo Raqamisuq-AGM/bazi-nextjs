@@ -1,18 +1,14 @@
-import AgentHeading from "../components/AgentHeadingCom/AgentHeading";
-
+import SuperAgentTable from "../components/Table/SuperAgentTable";
 
 export const metadata = {
-  title: "Super_agent",
-  description: "Static Description",
+  title: "Super Agents",
+  description: "Super Agents",
 };
 
-console.log("hello world.")
 export default function SuperAgentPage() {
   return (
-    <div className="super-agent-page">
-        <span>
-            <AgentHeading title={"SUPER AGENT LIST"} />
-        </span>
+    <div className="admin-page">
+      <SuperAgentTable />
     </div>
   );
 }

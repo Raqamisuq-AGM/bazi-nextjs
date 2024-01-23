@@ -1,15 +1,14 @@
-import Button from "../components/Common/Button";
-import SearchInput from "../components/Common/SearchInput";
+import AdminTable from "../components/Table/AdminTable";
 
 export const metadata = {
-  title: "Admin Title",
-  description: "Admin Description",
+  title: "Admin Agent",
+  description: "Admin Agent",
 };
 
 export default function AdminPage() {
-  return(
+  return (
     <div className="admin-page">
-        
+      <AdminTable />
     </div>
   );
 }

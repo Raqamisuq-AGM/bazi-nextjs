@@ -29,6 +29,10 @@ a {
   padding: 25px 0;
 }
 
+.smallLogo {
+  display: none;
+}
+
 /* navigation styless */
 .navigation-items {
   background-color: var(--red);
@@ -50,6 +54,24 @@ a {
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;
+}
+
+.navigation-items {
+  position: relative;
+}
+.barsIcon {
+  display: none;
+}
+.barsIcon svg {
+  position: absolute;
+  right: 15px;
+  top: 35px;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--light-blue);
+}
+.barsIcon span:nth-child(2) {
+  display: none;
 }
 
 .Page-title {
@@ -298,4 +320,108 @@ h5 {
 /* footer */
 .footer {
   background: var(--light-blue);
+}
+
+/* super agent and master agent styles */
+
+table thead th {
+  text-align: center;
+  background-color: var(--light-blue);
+}
+
+table tbody tr td {
+  height: fit-content;
+  text-align: center;
+  background-color: blue;
+}
+table tbody tr .stars {
+  height: 100%;
+  font-size: 20px;
+}
+table tbody tr .whatssapp svg {
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  color: white;
+  padding: 7px;
+  border-radius: 20px;
+}
+table tbody tr a {
+  padding: 0 !important;
+}
+table tbody tr td:last-child a {
+  text-decoration: none;
+  padding: 10px 15px !important;
+  background-color: var(--light-blue);
+  color: white;
+}
+
+/* Responsive area */
+
+/* @media screen (max-width:992px) {
+    .navigation-items ul li a {
+        font-size:18px;
+        display:none;
+    }
+} */
+
+@media (max-width: 992px) {
+  .navigation-items ul {
+    width: 50%;
+    height: 100vh;
+    display: block;
+    background-color: white;
+    padding: 50px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+  }
+  .navigation-items ul {
+    display: none;
+  }
+  .navigation-items ul li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 0;
+    margin: 10px 0;
+  }
+  .navigation-items ul li a {
+    font-size: 16px;
+    color: #000;
+  }
+  .logo-area {
+    display: none;
+  }
+  .smallLogo {
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+  .smallLogo a {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .smallLogo a img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+  .barsIcon {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-items ul {
+    width: 70%;
+  }
+}
+
+@media (max-width: 540px) {
+  .navigation-items ul {
+    width: 85%;
+  }
 }

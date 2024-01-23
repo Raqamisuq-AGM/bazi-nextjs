@@ -31,5 +31,16 @@ export default function AccountCreateData() {
     getAgent();
   }, []);
 
-  return <div>AccountCreateData</div>;
+  return (
+    <div className="customer-rules bg-white text-black text-left">
+      <div className="page-heading text-center p-5 col">
+        <h1>{content && content.title}</h1>
+        <p>{content && content.subTitle}</p>
+      </div>
+      <div
+        className="page-content p-5 col"
+        dangerouslySetInnerHTML={{ __html: content && content.content }}
+      />
+    </div>
+  );
 }

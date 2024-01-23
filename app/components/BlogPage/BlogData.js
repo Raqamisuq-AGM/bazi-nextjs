@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 export default function BlogData() {
-  const [content, setContent] = useState("");
+  const [content, setContent] = useState();
   const [isAdding, setIsAdding] = useState(false);
 
   const getAgent = async () => {
@@ -31,5 +31,16 @@ export default function BlogData() {
     getAgent();
   }, []);
 
-  return <div>BlogPage</div>;
+  return (
+    <div className="customer-rules bg-white text-black text-left">
+      <div className="page-heading text-center p-5 col">
+        <h1>{content && content.title}</h1>
+        <p>{content && content.subTitle}</p>
+      </div>
+      <div
+        className="page-content p-5 col"
+        dangerouslySetInnerHTML={{ __html: content && content.content }}
+      />
+    </div>
+  );
 }
