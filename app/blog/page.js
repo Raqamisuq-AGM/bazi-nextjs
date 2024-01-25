@@ -1,8 +1,10 @@
+import BlogData from "../components/BlogPage/BlogData";
+
 export const metadata = {
-  title: "Static Title",
-  description: "Static Description",
+  title: "Blog",
+  description: "Blog",
 };
 
 export default function BlogPage() {
-  return <div>this is blog page</div>;
+  return <BlogData />;
 }

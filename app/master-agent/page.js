@@ -1,14 +1,14 @@
-import AgentHeading from "../components/AgentHeadingCom/AgentHeading";
+import MasterAgentTable from "../components/Table/MasterAgentTable";
 
 export const metadata = {
-  title: "Static Title",
-  description: "Static Description",
+  title: "Master Agents",
+  description: "Master Agents",
 };
 
 export default function MasterAgentPage() {
-  return(
-    <div>
-      <AgentHeading title={'MASTER AGENT LIST'} />
+  return (
+    <div className="admin-page">
+      <MasterAgentTable />
     </div>
   );
 }
