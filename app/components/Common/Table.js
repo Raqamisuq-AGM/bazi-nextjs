@@ -23,7 +23,7 @@ export default function Table({ header, trData }) {
                   <td>{item.type}</td>
                   <td>{item.name}</td>
                   <td>{item.agentID}</td>
-                  <td className="whatssapp">
+                  <td className="whatsapp">
                     <Link href={`https://wa.me/${item.phoneAppLink}`}>
                       <FaWhatsapp />
                     </Link>
