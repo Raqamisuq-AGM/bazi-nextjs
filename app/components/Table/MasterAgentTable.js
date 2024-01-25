@@ -22,7 +22,18 @@ export default function MasterAgentTable() {
   };
 
   useEffect(() => {
+    // Fetch initial data
     getAgentData();
+  }, []);
+
+  useEffect(() => {
+    // Set up interval to fetch data every 10 minutes
+    const intervalId = setInterval(() => {
+      getAgentData();
+    }, 10 * 60 * 1000); // 10 minutes in milliseconds
+
+    // Clear the interval on component unmount
+    return () => clearInterval(intervalId);
   }, []);
 
   const header = [
