@@ -11,18 +11,11 @@ export async function POST(request) {
     // Fetch the count of super agents
     let Agents;
     if (body.type == "all") {
-      Agents = await prisma.agent.findMany({
-        orderBy: {
-          random: true,
-        },
-      });
+      Agents = await prisma.agent.findMany();
     } else {
       Agents = await prisma.agent.findMany({
         where: {
           type: body.type,
-        },
-        orderBy: {
-          random: true,
         },
       });
     }
