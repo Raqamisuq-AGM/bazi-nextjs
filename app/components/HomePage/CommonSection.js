@@ -18,11 +18,11 @@ export default function CommonSection() {
       .then(function (response) {
         setIsAdding(false);
         setHomeData(response.data.data);
-        console.log(response.data.data);
+        //console.log(response.data.data);
       })
       .catch(function (error) {
         setIsAdding(false);
-        console.log(error);
+        //console.log(error);
       });
   };
 
