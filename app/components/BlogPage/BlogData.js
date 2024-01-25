@@ -12,11 +12,11 @@ export default function BlogData() {
       .post("/api/blog/edit-data")
       .then(function (response) {
         setIsAdding(false);
-        console.log(response.data.data);
+        //console.log(response.data.data);
         setContent(response.data.data);
       })
       .catch(function (error) {
-        // console.log(error);
+        // //console.log(error);
         setIsAdding(false);
         toast.error("Something went wrong! Please try again later.", {
           position: "bottom-left",

@@ -14,10 +14,10 @@ export default function SuperAgentTable() {
       })
       .then(function (response) {
         setAgentData(response.data.data);
-        // console.log(response.data.data);
+        // //console.log(response.data.data);
       })
       .catch(function (error) {
-        // console.log(error);
+        // //console.log(error);
       });
   };
 
@@ -35,7 +35,7 @@ export default function SuperAgentTable() {
     // Clear the interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
-  
+
   const header = [
     "Type",
     "Name",

@@ -14,10 +14,10 @@ export default function MasterAgentTable() {
       })
       .then(function (response) {
         setAgentData(response.data.data);
-        // console.log(response.data.data);
+        // //console.log(response.data.data);
       })
       .catch(function (error) {
-        // console.log(error);
+        // //console.log(error);
       });
   };
 
