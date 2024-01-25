@@ -24,7 +24,9 @@ export default function SuperAgentTable() {
   useEffect(() => {
     // Fetch initial data
     getAgentData();
+  }, []);
 
+  useEffect(() => {
     // Set up interval to fetch data every 10 minutes
     const intervalId = setInterval(() => {
       getAgentData();
@@ -33,6 +35,7 @@ export default function SuperAgentTable() {
     // Clear the interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
+  
   const header = [
     "Type",
     "Name",

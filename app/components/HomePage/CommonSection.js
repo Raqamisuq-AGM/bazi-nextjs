@@ -32,22 +32,22 @@ export default function CommonSection() {
 
   return (
     <>
-      {!isAdding && HomeData && HomeData.length > 0
-        ? HomeData.map((item, index) => {
-            return (
-              <section className="how-to-create-account py-5">
-                <CommonComponent
-                  firstA={""}
-                  lastA={""}
-                  title={item.title}
-                  body={
-                    item.content
-                  }
-                />
-              </section>
-            );
-          })
-        : <div className="text-center py-5">Loading...</div>}
+      {!isAdding && HomeData && HomeData.length > 0 ? (
+        HomeData.map((item, index) => {
+          return (
+            <section key={index} className="how-to-create-account py-5">
+              <CommonComponent
+                firstA={""}
+                lastA={""}
+                title={item.title}
+                body={item.content}
+              />
+            </section>
+          );
+        })
+      ) : (
+        <div className="text-center py-5">Loading...</div>
+      )}
     </>
   );
 }

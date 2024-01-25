@@ -24,7 +24,9 @@ export default function CustomerServiceTable() {
   useEffect(() => {
     // Fetch initial data
     getAgentData();
+  }, []);
 
+  useEffect(() => {
     // Set up interval to fetch data every 10 minutes
     const intervalId = setInterval(() => {
       getAgentData();
