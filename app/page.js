@@ -1,4 +1,5 @@
 import CommonSection from "./components/HomePage/CommonSection";
+import SingleMasterAgent from "./components/HomePage/SingleMasterAgent";
 
 export default function HomePage() {
   return (
@@ -9,6 +10,7 @@ export default function HomePage() {
       {/* <section className="agent-list">
         <AgentList></AgentList>
       </section> */}
+      <SingleMasterAgent/>
       <CommonSection />
     </div>
   );
