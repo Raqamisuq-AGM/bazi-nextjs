@@ -35,14 +35,14 @@ export default function CommonSection() {
       {!isAdding && HomeData && HomeData.length > 0 ? (
         HomeData.map((item, index) => {
           return (
-            <section key={index} className="how-to-create-account py-5">
+            <div className="body">
               <CommonComponent
                 firstA={""}
                 lastA={""}
                 title={item.title}
                 body={item.content}
               />
-            </section>
+            </div>
           );
         })
       ) : (

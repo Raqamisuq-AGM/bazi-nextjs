@@ -1,56 +1,68 @@
 "use client";
-import Image from "next/image";
-import logo from "@/public/images/logo.png";
-import Link from "next/link";
-import { IoHomeSharp } from "react-icons/io5";
-import { FaQuestionCircle } from "react-icons/fa";
-import { FaUser } from "react-icons/fa";
-import { FaUserTag } from "react-icons/fa6";
-import { FaUsers } from "react-icons/fa";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function NavCom() {
   const [openNav, showNav] = useState(false);
 
   return (
-    <div className="Header-section">
-      <div className="logo-area">
-        <Link href={"/"}>
-          <Image src={logo} alt="logo"></Image>
-        </Link>
-      </div>
-
-      <div className="navigation-items">        
-        <ul className="nav ">
+    <>
+      <Link href={"/"} class="logo-box">
+        <img src="images/logo.png" alt="AGENT LIST" width="520" height="auto" />
+      </Link>
+      <div id="navigation">
+        <ul class="menubar">
           <li>
             <Link href={"/"}>
-              {" "}
-              <IoHomeSharp />
+              <img src="images/rooms.png" alt="HOME" width="25" height="20" />
             </Link>
           </li>
           <li>
             <Link href={"/customer-service"}>
-              {" "}
-              <FaQuestionCircle /> Customer Service
+              <img
+                src="images/help.png"
+                alt="কাস্টমার সার্ভিস"
+                width="25"
+                height="20"
+              />
+              কাস্টমার সার্ভিস
             </Link>
           </li>
           <li>
             <Link href={"/admin"}>
-              <FaUser /> Admin
+              <img
+                src="images/sub_admin.png"
+                alt="এডমিন"
+                width="25"
+                height="20"
+              />
+              এডমিন
             </Link>
           </li>
           <li>
             <Link href={"/super-agent"}>
-              <FaUserTag /> Super Agent
+              <img
+                src="images/super_agent.png"
+                alt="সুপার এজেন্ট"
+                width="25"
+                height="20"
+              />
+              সুপার এজেন্ট
             </Link>
           </li>
           <li>
             <Link href={"/master-agent"}>
-              <FaUsers /> Master Agent
+              <img
+                src="images/agent.png"
+                alt="মাষ্টার এজেন্ট"
+                width="25"
+                height="20"
+              />
+              মাষ্টার এজেন্ট
             </Link>
           </li>
         </ul>
       </div>
-    </div>
+    </>
   );
 }

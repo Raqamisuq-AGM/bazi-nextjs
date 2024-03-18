@@ -14,12 +14,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="container">
-          <NavCom/>
-            {children}
-            <Footer/>
-        </div>      
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+        <link rel="SHORTCUT ICON" href="images/favicon.png" />
+      </head>
+      <body>
+        <div id="wrapper">
+          <NavCom />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
