@@ -48,7 +48,7 @@ div#header span {
 }
 
 div#navigation {
-  background-image: url("/images/menubar-bg.png");
+  background-image: url(menubar-bg.png);
   height: 50px;
   width: 100%;
   margin-top: none;
@@ -85,13 +85,13 @@ ul.menubar li img {
 
 ul.menubar li {
   display: inline-block;
-  background-image: url('/images/menubar-split.png');
+  background-image: url(menubar-split.png);
   background-repeat: no-repeat;
   background-position: right;
   height: 50px;
   line-height: 2em;
-  padding-left: 30px;
-  padding-right: 45px;
+  padding-left: 5px;
+  padding-right: 24px;
 }
 
 ul.menubar li:last-child {
@@ -153,7 +153,7 @@ div#navigation input[type="text"] {
   background-color: #4e4e4e;
   margin-right: 10px;
   width: 200px;
-  background-image: url('/images/search-icon.png');
+  background-image: url(search-icon.png);
   background-position: right;
   background-repeat: no-repeat;
   margin-top: 12px;
@@ -169,7 +169,7 @@ div#footer-push {
 }
 
 div#footer {
-  background-image: url('/images/footer-bg.png');
+  background-image: url(footer-bg.png);
   height: 36px;
   width: 100%;
   font-family: "bangla", lucida sans unicode, lucida grande, sans-serif;
@@ -215,7 +215,7 @@ div.frame {
 }
 
 div.frame div.header {
-  background-image: url('/images/boxtitlebg.png');
+  background-image: url(boxtitlebg.png);
   height: 20px;
   font-family: "bangla", Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -228,7 +228,7 @@ div.frame div.header {
 }
 
 div.frame div.title {
-  background-image: url('/images/bullet.png');
+  background-image: url(bullet.png);
   background-position: left;
   background-repeat: no-repeat;
   margin-left: 5px;
@@ -272,7 +272,7 @@ div.notification {
 
 div.notification div.header {
   border-radius: 8px;
-  background-image: url('/images/notificationbg.png');
+  background-image: url(notificationbg.png);
   height: 20px;
   font-family: "bangla", Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -285,7 +285,7 @@ div.notification div.header {
 }
 
 div.notification div.title {
-  background-image: url('/images/bullet.png');
+  background-image: url(bullet.png);
   background-position: left;
   background-repeat: no-repeat;
   margin-left: 5px;
@@ -359,7 +359,7 @@ table.data td.left {
 }
 
 table.forms th.title {
-  background-image: url('/images/boxtitlebg.png');
+  background-image: url(boxtitlebg.png);
   height: 27px;
   color: #fff;
   padding: 0;
@@ -385,7 +385,7 @@ div#licenseinfo input[type="button"] {
   height: 37px;
   border: 1px solid #000;
   border-radius: 7px;
-  background-image: url('/images/button-bg.png');
+  background-image: url(button-bg.png);
   min-width: 100px;
   cursor: pointer;
   font-family: "bangla", Arial, Helvetica, sans-serif;
@@ -405,7 +405,7 @@ table.data {
 }
 
 table.data th.header {
-  /* background-image: url('/images/datatitlebg.png'); */
+  /* background-image: url(datatitlebg.png); */
   height: 20px;
   color: #fff;
   font-weight: 700;
@@ -513,7 +513,7 @@ span.error {
   font-family: "bangla", Arial, Helvetica, sans-serif;
   font-size: 12px;
   text-align: left;
-  background-image: url('/images/error.png');
+  background-image: url(error.png);
   background-position: 10px;
   background-repeat: no-repeat;
   color: #8f6e30;
@@ -561,7 +561,7 @@ div.hint {
   font-family: "bangla", Arial, Helvetica, sans-serif;
   font-size: 12px;
   text-align: left;
-  background-image: url('/images/info.png');
+  background-image: url(info.png);
   background-position: 5px;
   background-repeat: no-repeat;
   border-radius: 8px;
@@ -603,7 +603,7 @@ div#licenseinfo {
   width: 925px;
   margin: auto;
   border: 1px solid #7ea0f2;
-  /* border-radius: 8px; */
+  border-radius: 8px;
   font-family: "bangla", lucida sans unicode, lucida grande, sans-serif;
   font-size: 14px;
   margin-bottom: 10px;
@@ -619,7 +619,7 @@ div#licenseinfo div.title {
   text-align: left;
   padding-left: 50px;
   background-color: #5a78c2;
-  /* border-radius: 8px; */
+  border-radius: 8px;
   text-align: center;
 }
 
@@ -642,7 +642,7 @@ div#licenseinfo span.expired {
   display: block;
   display: inline-block;
   text-align: center;
-  background-image: url('/images/error.png');
+  background-image: url(error.png);
   background-position: 10px;
   background-repeat: no-repeat;
   color: #ff6262;
@@ -659,7 +659,7 @@ div#licenseinfo span.expired a {
 
 div#licenseinfo span.update {
   color: #f90;
-  background-image: url('/images/update.png');
+  background-image: url(update.png);
   background-position: 10px;
   background-repeat: no-repeat;
   margin: 10px;
@@ -702,7 +702,7 @@ div#preview div#mask {
 }
 
 .ui-progressbar .ui-progressbar-value {
-  background-image: url('/images/progressbar.gif');
+  background-image: url(progressbar.gif);
 }
 
 div#progressbar {

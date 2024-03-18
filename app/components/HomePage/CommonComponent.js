@@ -2,13 +2,15 @@
 
 export default function CommonComponent({ title, body }) {
   return (
-    <div className="content-area">
-      <div className="title p-5 text-white text-center ">
-        <h2>{title}</h2>
+    <div id="licenseinfo">
+      <div className="header">
+        <div className="title">{title}</div>
+        <div className="legend" />
       </div>
-
-      <div className="content-body">
-        {body ? <p dangerouslySetInnerHTML={{ __html: body }} /> : null}
+      <div className="body">
+        <div className="code">
+          {body ? <p dangerouslySetInnerHTML={{ __html: body }} /> : null}
+        </div>
       </div>
     </div>
   );
